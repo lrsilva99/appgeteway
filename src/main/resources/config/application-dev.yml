@@ -33,8 +33,8 @@ spring:
     datasource:
         url: jdbc:mysql://localhost:3306/appgeteway?useUnicode=true&characterEncoding=utf8&useSSL=false
         name:
-        username: root
-        password:
+        username: leonardo
+        password: masrv!@28M
         hikari:
             data-source-properties:
                 cachePrepStmts: true
