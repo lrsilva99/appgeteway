@@ -1,0 +1,38 @@
+
+<div>
+    <h2><span translate="appgetewayApp.instituicao.detail.title">Instituicao</span> {{vm.instituicao.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="appgetewayApp.instituicao.sigla">Sigla</span></dt>
+        <dd>
+            <span>{{vm.instituicao.sigla}}</span>
+        </dd>
+        <dt><span translate="appgetewayApp.instituicao.nome">Nome</span></dt>
+        <dd>
+            <span>{{vm.instituicao.nome}}</span>
+        </dd>
+        <dt><span translate="appgetewayApp.instituicao.email">Email</span></dt>
+        <dd>
+            <span>{{vm.instituicao.email}}</span>
+        </dd>
+        <dt><span translate="appgetewayApp.instituicao.telefone">Telefone</span></dt>
+        <dd>
+            <span>{{vm.instituicao.telefone}}</span>
+        </dd>
+        <dt><span translate="appgetewayApp.instituicao.endereco">Endereco</span></dt>
+        <dd>
+            <span>{{vm.instituicao.endereco}}</span>
+        </dd>
+        <dt><span translate="appgetewayApp.instituicao.instituicao">Instituicao</span></dt>
+        <dd>
+            <a ui-sref="instituicao-detail({id:vm.instituicao.instituicao.id})">{{vm.instituicao.instituicao.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

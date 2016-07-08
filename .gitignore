@@ -1,7 +1,7 @@
 ######################
 # Project Specific
 ######################
-/src/main/webapp/content/css/main.css
+#/src/main/webapp/content/css/main.css
 /target/www/**
 
 ######################
@@ -137,10 +137,8 @@ Desktop.ini
 node_modules/
 # Para arquivos Java compilados
 *.class
-# Para código C
+# Para cï¿½digo C
 *.so
 # Para todos os arquivos e sub-pastas localizados na pasta bower_components/
 bower_components/
 
-
-src/main/webapp/
