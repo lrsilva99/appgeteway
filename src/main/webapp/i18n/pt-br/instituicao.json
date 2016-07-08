@@ -2,26 +2,26 @@
     "appgetewayApp": {
         "instituicao" : {
             "home": {
-                "title": "Instituicaos",
-                "createLabel": "Criar novo Instituicao",
-                "createOrEditLabel": "Criar ou editar Instituicao",
-                "search": "Pesquisar por Instituicao"
+                "title": "Instituição",
+                "createLabel": "Criar uma nova instituição",
+                "createOrEditLabel": "Criar ou editar uma instituição",
+                "search": "Pesquisar por instituição"
             },
-            "created": "Um novo Instituicao é criado com o identificador {{ param }}",
-            "updated": "Um Instituicao é atualizado com o identificador {{ param }}",
+            "created": "Uma nova instituicao foi criadacom sucesso!! Código {{ param }}.",
+            "updated": "A instituição foi atualizada com sucesso {{ param }}.",
             "deleted": "Um Instituicao é deletado com o identificador {{ param }}",
             "delete": {
-                "question": "Tem certeza de que deseja excluir Instituicao {{ id }}?"
+                "question": "Deseja excluir este registro {{ id }}?"
             },
             "detail": {
-                "title": "Instituicao"
+                "title": "Instituição"
             },
             "sigla": "Sigla",
             "nome": "Nome",
-            "email": "Email",
+            "email": "E-mail",
             "telefone": "Telefone",
-            "endereco": "Endereco",
-            "instituicao": "Instituicao"
+            "endereco": "Endereço",
+            "instituicao": "Instituição"
         }
     }
 }

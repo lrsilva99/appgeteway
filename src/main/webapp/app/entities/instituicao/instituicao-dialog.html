@@ -64,7 +64,7 @@
 
         <div class="form-group">
             <label translate="appgetewayApp.instituicao.instituicao" for="field_instituicao">Instituicao</label>
-            <select class="form-control" id="field_instituicao" name="instituicao" ng-model="vm.instituicao.instituicao" ng-options="instituicao as instituicao.id for instituicao in vm.instituicaos track by instituicao.id">
+            <select class="form-control" id="field_instituicao" name="instituicao" ng-model="vm.instituicao.instituicao" ng-options="instituicao as instituicao.sigla for instituicao in vm.instituicaos track by instituicao.sigla">
                 <option value=""></option>
             </select>
         </div>
