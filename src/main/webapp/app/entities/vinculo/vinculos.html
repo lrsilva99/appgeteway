@@ -1,21 +1,21 @@
 <div>
-    <span class="glyphicon glyphicon-education"></span>&nbsp;
-    <h2 translate="appgetewayApp.formacao.home.title">Formacaos</h2>
+    <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+    <h2 translate="appgetewayApp.vinculo.home.title">Vinculos</h2>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="formacao.new" >
+                <button class="btn btn-primary" ui-sref="vinculo.new" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span class="hidden-xs"  translate="entity.action.add">
-                        Create new Formacao
+                        Create new Vinculo
                     </span>
                 </button>
             </div>
             <div class="col-xs-8 no-padding-right">
                 <form name="searchForm" class="form-inline">
                     <div class="input-group pull-right" >
-                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'appgetewayApp.formacao.home.search' | translate }}">
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'appgetewayApp.vinculo.home.search' | translate }}">
                         <span  class="input-group-btn width-min" >
                             <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -43,26 +43,26 @@
                 </tr>
             </thead>
             <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
-                <tr ng-repeat="formacao in vm.formacaos track by formacao.id">
-                    <td><a ui-sref="formacao-detail({id:formacao.id})">{{formacao.id}}</a></td>
-                    <td>{{formacao.nome}}</td>
-                    <td>{{formacao.descricao}}</td>
+                <tr ng-repeat="vinculo in vm.vinculos track by vinculo.id">
+                    <td><a ui-sref="vinculo-detail({id:vinculo.id})">{{vinculo.id}}</a></td>
+                    <td>{{vinculo.nome}}</td>
+                    <td>{{vinculo.descricao}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="formacao-detail({id:formacao.id})"
+                                    ui-sref="vinculo-detail({id:vinculo.id})"
                                     class="btn btn-info btn-sm">
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="formacao.edit({id:formacao.id})"
+                                    ui-sref="vinculo.edit({id:vinculo.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="formacao.delete({id:formacao.id})"
+                                    ui-sref="vinculo.delete({id:vinculo.id})"
                                     class="btn btn-danger btn-sm">
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>

@@ -1,0 +1,13 @@
+{
+    "appgetewayApp": {
+        "locacao" : {
+            "home": {
+                "title": "Lotação",
+                "search": "Search for Lotacao"
+            },
+            "detail": {
+                "title": "Lotação"
+            }
+        }
+    }
+}

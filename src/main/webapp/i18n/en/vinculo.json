@@ -1,0 +1,14 @@
+{
+    "appgetewayApp": {
+        "vinculo" : {
+            "home": {
+                "title": "Bond",
+                "createOrEditLabel": "Create or edit a bold",
+                "search": "Search for bond"
+            },
+            "detail": {
+                "title": "Bond"
+            }
+        }
+    }
+}

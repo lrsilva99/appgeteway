@@ -1,0 +1,14 @@
+{
+    "appgetewayApp": {
+        "locacao" : {
+            "home": {
+                "title": "Lotação",
+                "createOrEditLabel": "Criar ou editar lotação",
+                "search": "Pesquisar por lotação"
+            },
+            "detail": {
+                "title": "Lotação"
+            }
+        }
+    }
+}

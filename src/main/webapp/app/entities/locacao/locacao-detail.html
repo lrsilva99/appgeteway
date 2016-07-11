@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span translate="appgetewayApp.locacao.detail.title">Locacao</span> {{vm.locacao.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="aglobal.field.nome">Nome</span></dt>
+        <dd>
+            <span>{{vm.locacao.nome}}</span>
+        </dd>
+        <dt><span translate="global.field.descricao">Descricao</span></dt>
+        <dd>
+            <span>{{vm.locacao.descricao}}</span>
+        </dd>
+        <dt><span translate="log.createdBy">Created By</span></dt>
+        <dd>
+            {{vm.locacao.createdBy}}
+            <span translate="log.createdEm">Created Date</span></strong>
+            {{vm.locacao.createdDate | date:'dd/MM/yy HH:mm' }}
+
+        </dd>
+        <dt><span translate="log.lastModifiedBy">Last Modified By</span></dt>
+        <dd>{{vm.locacao.lastModifiedBy}}
+            <span translate="log.lastModifiedEm">Last Modified Date</span></dt>
+        {{vm.locacao.lastModifiedDate | date:'dd/MM/yy HH:mm'}}
+
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

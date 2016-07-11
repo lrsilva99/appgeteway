@@ -12,6 +12,8 @@
                 "escolaridade": "Escolaridade",
                 "formacao": "Formação",
                 "banco": "Banco",
+                "vinculo": "Vínculo",
+                "locacao": "Lotação",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

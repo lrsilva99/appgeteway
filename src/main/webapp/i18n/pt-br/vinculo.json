@@ -1,0 +1,14 @@
+{
+    "appgetewayApp": {
+        "vinculo" : {
+            "home": {
+                "title": "Vínculo",
+                "createOrEditLabel": "Criar ou editar vínculo",
+                "search": "Pesquisar por vinculo"
+            },
+            "detail": {
+                "title": "Vínculo"
+            }
+        }
+    }
+}
