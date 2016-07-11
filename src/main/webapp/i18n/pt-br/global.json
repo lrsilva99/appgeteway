@@ -7,7 +7,11 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
-                "instituicao": "Instituicao",
+                "instituicao": "Instituição",
+                "cargo": "Cargo",
+                "escolaridade": "Escolaridade",
+                "formacao": "Formação",
+                "banco": "Banco",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -74,7 +78,10 @@
             }
         },
         "field": {
-            "id" : "Código"
+            "id" : "ID",
+            "nome": "Nome",
+            "descricao" : "Descrição"
+
         },
         "ribbon": {
             "dev":"Development"
@@ -90,7 +97,8 @@
             "edit": "Editar",
             "open": "Open",
             "save": "Salvar",
-            "view": "Visualizar"
+            "view": "Visualizar",
+            "add" : "Adicionar novo registro"
         },
         "detail": {
             "field": "Campo",
@@ -120,6 +128,21 @@
         "userexists": "Usuário já existente!",
         "emailexists": "Este email já está cadastrado!",
         "idexists": "Novo(a) {{entityName}} não pode ter uma ID"
+    },
+    "opera": {
+        "created": "O registro  <strong> \"{{ id }}\"</strong> foi criado com sucesso!",
+        "updated": "O registro  <strong> \"{{ id }}\"</strong> foi atualizado com sucesso!",
+        "deleted": "O registro:  <strong> \"{{ id }}\"</strong> foi deletada com sucesso!",
+        "question": "Deseja excluir o registro: <strong> \"{{ id }}\"</strong>?"
+    },
+
+    "log": {
+        "createdBy": "Criado por",
+        "createdDate": "Criado em",
+        "lastModifiedBy": "Alterado por",
+        "lastModifiedDate": "Alterado em",
+        "createdEm": "em",
+        "lastModifiedEm": "em"
     },
     "footer": "Este é o seu rodapé"
 }

@@ -7,7 +7,11 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
-                "instituicao": "Instituicao",
+                "instituicao": "Institution",
+                "cargo": "Cargo",
+                "escolaridade": "Education",
+                "formacao": "Formation",
+                "banco": "Banco",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -74,7 +78,9 @@
             }
         },
         "field": {
-            "id": "ID"
+            "id": "ID",
+            "nome": "Name",
+            "descricao" : "Description"
         },
         "ribbon": {
             "dev":"Development"
@@ -90,7 +96,8 @@
             "edit": "Edit",
             "open": "Open",
             "save": "Save",
-            "view": "View"
+            "view": "View",
+            "add" : "Add"
         },
         "detail": {
             "field": "Field",
@@ -121,5 +128,20 @@
         "emailexists": "E-mail is already in use!",
         "idexists": "A new {{ entityName }} cannot already have an ID"
     },
+    "opera": {
+        "created": "The record <strong> \"{{ id }}\"</strong> was successfully created!",
+        "updated": "The record  <strong> \"{{ id }}\"</strong> successfully updated!",
+        "deleted": "The record  <strong> \"{{ id }}\"</strong> was deleted successfully!",
+        "question": "Do you want to delete the record: <strong> \"{{ id }}\"</strong>?"
+    },
+    "log": {
+        "createdBy": "Created by",
+        "createdDate": "Created date",
+        "lastModifiedBy": "Modified by",
+        "lastModifiedDate": "Modified date",
+        "createdEm": "in:",
+        "lastModifiedEm": "in:"
+    },
+
     "footer": "This is your footer"
 }

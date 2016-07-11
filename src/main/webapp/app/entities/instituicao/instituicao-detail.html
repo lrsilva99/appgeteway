@@ -8,7 +8,7 @@
         <dd>
             <span>{{vm.instituicao.sigla}}</span>
         </dd>
-        <dt><span translate="appgetewayApp.instituicao.nome">Nome</span></dt>
+        <dt><span translate="global.field.nome">Nome</span></dt>
         <dd>
             <span>{{vm.instituicao.nome}}</span>
         </dd>
@@ -28,6 +28,21 @@
         <dd>
             <a ui-sref="instituicao-detail({id:vm.instituicao.instituicao.id})">{{vm.instituicao.instituicao.sigla}}</a>
         </dd>
+
+        <dt><span translate="log.createdBy">Created By</span></dt>
+        <dd>
+            {{vm.instituicao.createdBy}}
+            <span translate="log.createdEm">Created Date</span></strong>
+            {{vm.instituicao.createdDate | date:'dd/MM/yy HH:mm' }}
+
+        </dd>
+        <dt><span translate="log.lastModifiedBy">Last Modified By</span></dt>
+        <dd>{{vm.instituicao.lastModifiedBy}}
+            <span translate="log.lastModifiedEm">Last Modified Date</span></dt>
+        {{vm.instituicao.lastModifiedDate | date:'dd/MM/yy HH:mm'}}
+
+        </dd>
+
     </dl>
 
     <button type="submit"

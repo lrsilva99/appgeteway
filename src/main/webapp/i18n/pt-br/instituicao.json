@@ -3,15 +3,8 @@
         "instituicao" : {
             "home": {
                 "title": "Instituição",
-                "createLabel": "Criar uma nova instituição",
                 "createOrEditLabel": "Criar ou editar uma instituição",
                 "search": "Pesquisar por instituição"
-            },
-            "created": "Uma nova instituicao foi criadacom sucesso!! Código {{ param }}.",
-            "updated": "A instituição foi atualizada com sucesso {{ param }}.",
-            "deleted": "Um Instituicao é deletado com o identificador {{ param }}",
-            "delete": {
-                "question": "Deseja excluir este registro {{ id }}?"
             },
             "detail": {
                 "title": "Instituição"

@@ -1,0 +1,23 @@
+{
+    "appgetewayApp": {
+        "banco" : {
+            "home": {
+                "title": "Bancos",
+                "createLabel": "Criar novo Banco",
+                "createOrEditLabel": "Criar ou editar Banco",
+                "search": "Pesquisar por Banco"
+            },
+            "created": "Um novo Banco é criado com o identificador {{ param }}",
+            "updated": "Um Banco é atualizado com o identificador {{ param }}",
+            "deleted": "Um Banco é deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Banco {{ id }}?"
+            },
+            "detail": {
+                "title": "Banco"
+            },
+            "codigo": "Codigo",
+            "nome": "Nome"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span translate="appgetewayApp.cargo.detail.title">Cargo</span> {{vm.cargo.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="global.field.nome">Nome</span></dt>
+        <dd>
+            <span>{{vm.cargo.nome}}</span>
+        </dd>
+        <dt><span translate="global.field.descricao">Descricao</span></dt>
+        <dd>
+            <span>{{vm.cargo.descricao}}</span>
+        </dd>
+        <dt><span translate="log.createdBy">Created By</span></dt>
+        <dd>
+            {{vm.cargo.createdBy}}
+            <span translate="log.createdEm">Created Date</span></strong>
+            {{vm.cargo.createdDate | date:'dd/MM/yy HH:mm' }}
+
+        </dd>
+        <dt><span translate="log.lastModifiedBy">Last Modified By</span></dt>
+        <dd>{{vm.cargo.lastModifiedBy}}
+            <span translate="log.lastModifiedEm">Last Modified Date</span></dt>
+        {{vm.cargo.lastModifiedDate | date:'dd/MM/yy HH:mm'}}
+
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

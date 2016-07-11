@@ -1,0 +1,17 @@
+{
+    "appgetewayApp": {
+        "formacao" : {
+            "home": {
+                "title": "Formação",
+                "createOrEditLabel": "Criar ou editar formação",
+                "search": "Pesquisar por Formacao"
+            },
+
+            "detail": {
+                "title": "Formação"
+            },
+            "nome": "Nome",
+            "descricao": "Descrição"
+        }
+    }
+}

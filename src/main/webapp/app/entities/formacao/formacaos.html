@@ -1,22 +1,21 @@
 <div>
-    <span class="glyphicon glyphicon-tower"></span>
-    <h2 translate="appgetewayApp.instituicao.home.title">Instituicaos</h2>
+    <span class="glyphicon glyphicon-education"></span>&nbsp;
+    <h2 translate="appgetewayApp.formacao.home.title">Formacaos</h2>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="instituicao.new" >
+                <button class="btn btn-primary" ui-sref="formacao.new" >
                     <span class="glyphicon glyphicon-plus"></span>
-
                     <span class="hidden-xs"  translate="entity.action.add">
-                        Create new Instituicao
+                        Create new Formacao
                     </span>
                 </button>
             </div>
             <div class="col-xs-8 no-padding-right">
                 <form name="searchForm" class="form-inline">
                     <div class="input-group pull-right" >
-                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'appgetewayApp.instituicao.home.search' | translate }}">
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'appgetewayApp.formacao.home.search' | translate }}">
                         <span  class="input-group-btn width-min" >
                             <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -38,44 +37,32 @@
             <thead>
                 <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.reset()">
                     <th jh-sort-by="id"><span translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="sigla"><span translate="appgetewayApp.instituicao.sigla">Sigla</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="nome"><span translate="appgetewayApp.instituicao.nome">Nome</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="email"><span translate="appgetewayApp.instituicao.email">Email</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="instituicao.id"><span translate="appgetewayApp.instituicao.instituicao">Instituicao</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="createdDate"><span translate="log.createdDate">Created Date</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="lastModifiedBy"><span translate="log.lastModifiedBy">Last Modified By</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="lastModifiedDate"><span translate="log.lastModifiedDate">Last Modified Date</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="nome"><span translate="appgetewayApp.formacao.nome">Nome</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="descricao"><span translate="appgetewayApp.formacao.descricao">Descricao</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
-                <tr ng-repeat="instituicao in vm.instituicaos track by instituicao.id">
-                    <td><a ui-sref="instituicao-detail({id:instituicao.id})">{{instituicao.id}}</a></td>
-                    <td>{{instituicao.sigla}}</td>
-                    <td>{{instituicao.nome}}</td>
-                    <td>{{instituicao.email}}</td>
-                    <td>
-                        <a ui-sref="instituicao-detail({id:instituicao.instituicao.id})">{{instituicao.instituicao.sigla}}</a>
-                    </td>
-                    <td>{{instituicao.createdDate | date:'dd/MM/yy HH:mm'}}</td>
-                    <td>{{instituicao.lastModifiedBy}}</td>
-                    <td>{{instituicao.lastModifiedDate | date:'dd/MM/yy HH:mm'}}</td>
+                <tr ng-repeat="formacao in vm.formacaos track by formacao.id">
+                    <td><a ui-sref="formacao-detail({id:formacao.id})">{{formacao.id}}</a></td>
+                    <td>{{formacao.nome}}</td>
+                    <td>{{formacao.descricao}}</td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"
-                                    ui-sref="instituicao-detail({id:instituicao.id})"
+                                    ui-sref="formacao-detail({id:formacao.id})"
                                     class="btn btn-info btn-sm">
                                 <span class="glyphicon glyphicon-eye-open"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="instituicao.edit({id:instituicao.id})"
+                                    ui-sref="formacao.edit({id:formacao.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="instituicao.delete({id:instituicao.id})"
+                                    ui-sref="formacao.delete({id:formacao.id})"
                                     class="btn btn-danger btn-sm">
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>

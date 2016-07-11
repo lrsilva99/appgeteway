@@ -1,0 +1,16 @@
+{
+    "appgetewayApp": {
+        "escolaridade" : {
+            "home": {
+                "title": "Formation",
+                "createOrEditLabel": "Create or edit a Formation",
+                "search": "Search for Formation"
+            },
+            "detail": {
+                "title": "Formation"
+            },
+            "nome": "Name",
+            "descricao": "Description"
+        }
+    }
+}

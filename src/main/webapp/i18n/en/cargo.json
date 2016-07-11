@@ -1,0 +1,16 @@
+{
+    "appgetewayApp": {
+        "cargo" : {
+            "home": {
+                "title": "Office",
+                "createLabel": "Create a new Office",
+                "createOrEditLabel": "Create or edit a Office",
+                "search": "Search for Cargo"
+            },
+
+            "detail": {
+                "title": "Office"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "appgetewayApp": {
+        "escolaridade" : {
+            "home": {
+                "title": "Escolaridade",
+                "createOrEditLabel": "Criar ou editar escolaridade",
+                "search": "Pesquisar por escolaridade"
+            },
+            "detail": {
+                "title": "Escolaridade"
+            },
+            "nome": "Nome",
+            "descricao": "Descrição"
+        }
+    }
+}
